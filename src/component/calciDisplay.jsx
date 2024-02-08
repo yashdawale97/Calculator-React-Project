@@ -1,5 +1,5 @@
 import style from "./calciDisplay.module.css";
-function CalciDisplay(){
-    return <input className={style.display} type="text" />
+function CalciDisplay({displayValue}){
+    return <input className={style.display} type="text"  value={displayValue} readOnly />
 }
 export default CalciDisplay;
